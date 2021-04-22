@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/strings.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key key, this.title}) : super(key: key);
+  HomeScreen({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(title!),
       ),
       body: Center(
         child: Column(
